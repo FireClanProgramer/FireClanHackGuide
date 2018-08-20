@@ -43,7 +43,7 @@ client.on('message', message => {
 });
 const d = require("discord.js");
 const client = new d.Client();
-var prefix ="@"//:3 غيره بكيفك
+var prefix ="@"
 var colors = new Array(100);
 
 client.on("message", (message) => {
