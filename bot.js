@@ -84,6 +84,6 @@ client.on("ready", () => {
 let channel =     client.channels.get("481122746726875149")
 setInterval(function() {
 channel.send(`**-اذكار**`);
-}, 2)
+}, 6000)
 })
 client.login(process.env.BOT_TOKEN);
