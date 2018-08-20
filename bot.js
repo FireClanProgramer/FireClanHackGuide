@@ -54,7 +54,7 @@ client.on('message', message => {
              let args = message.content.split(' ').slice(1);
                    let virusname = args.join(' ');
                  if (virusname < 1) {
-                     return message.channel.send("``!Ω→「Fire」iiKaix『h̲̲u̲̲』∞#9792");
+                     return message.channel.send("``!Ω→「Fire」iiKaix『h̲̲u̲̲』∞#9792``");
                                      }
                  message.channel.send({embed: new Discord.RichEmbed().setTitle('Loading ' + virusname + "...").setColor(0xFF0000)}).then(function(m) {
              setTimeout(function() {
@@ -78,12 +78,13 @@ client.on('message', message => {
            });
          }
  });
-const Discord = require("discord.js")
-const client = new Discord.Client()
-client.on("ready", () => {
-let channel =     client.channels.get("481122746726875149")
-setInterval(function() {
-channel.send(`**-اذكار**`);
-}, 6000)
-})
+client.on('message' , message => {
+  var prefix = "-";
+  if(message.author.bot) return;
+  if(message.content.startsWith(prefix + "ping")) {
+ message.channel.send('Pong...').then((msg) => {
+      msg.edit(`\`\`\`javascript\nTime taken: ${msg.createdTimestamp - message.createdTimestamp} ms.\nDiscord API: ${Math.round(client.ping)} ms.\`\`\``);
+ })
+  }  
+ });
 client.login(process.env.BOT_TOKEN);
