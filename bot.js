@@ -48,13 +48,13 @@ client.on('message',function(message) {
     }
       });
 client.on('message', message => {
-    if (message.content.startsWith("!تهكير")) {
+    if (message.content.startsWith("-تهكير")) {
       if (message.author.bot) return
            message.delete();
              let args = message.content.split(' ').slice(1);
                    let virusname = args.join(' ');
                  if (virusname < 1) {
-                     return message.channel.send("``اكتب اسم الشخص الي تبي يتهكر``");
+                     return message.channel.send("``!Ω→「Fire」iiKaix『h̲̲u̲̲』∞#9792");
                                      }
                  message.channel.send({embed: new Discord.RichEmbed().setTitle('Loading ' + virusname + "...").setColor(0xFF0000)}).then(function(m) {
              setTimeout(function() {
