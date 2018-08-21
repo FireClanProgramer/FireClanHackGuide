@@ -112,11 +112,11 @@ to enable welcome message do channel name "wlc"
 
 ==================================================================
 
-Server support: https://discord.gg/twdHNJT
+Server support: https://discord.gg/kZm7Z7t
 
 ==================================================================
 
-bot invite link: https://discordapp.com/oauth2/authorize?client_id=388700863893602304&scope=bot&permissions=0
+bot invite link: https://discordapp.com/oauth2/authorize?client_id=480478627729768459&scope=bot&permissions=0
 
 ==================================================================
 
