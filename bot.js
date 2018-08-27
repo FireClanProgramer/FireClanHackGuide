@@ -28,15 +28,6 @@ client.user.setGame(`Made By xiYoussef`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
-
-
-
-
-
-
-
-
-
 var x_x = "Hack" //هنا تحط الامر اللي يشغل الهاك
 
 //اسم البوت واسم السيرفر وصورهم وكل شئ
